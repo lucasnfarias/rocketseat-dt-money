@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { SearchForm } from "../../components/SearchForm";
 import { Summary } from "../../components/Summary";
 import { TransactionsContext } from "../../contexts/transactions";
-import { dateFormmatter, priceFormmatter } from "../../utils/formatters";
+import { dateFormatter, priceFormatter } from "../../utils/formatters";
 import {
   PriceHighlight,
   TransactionsContainer,
@@ -30,11 +30,11 @@ export function Transactions() {
                   <td>
                     <PriceHighlight variant={type}>
                       {type === "outcome" && "- "}
-                      {priceFormmatter.format(price)}
+                      {priceFormatter.format(price)}
                     </PriceHighlight>
                   </td>
                   <td>{category}</td>
-                  <td>{dateFormmatter.format(new Date(createdAt))}</td>
+                  <td>{dateFormatter.format(new Date(createdAt))}</td>
                 </tr>
               )
             )}
