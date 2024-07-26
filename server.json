@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2022-07-29T19:24:44.505Z"
+    },
+    {
+      "description": "Dev de app",
+      "price": 10000,
+      "category": "Dev",
+      "type": "income",
+      "createdAt": "2024-07-26T00:04:23.266Z",
+      "id": 4
+    },
+    {
+      "description": "Teste",
+      "price": 100,
+      "category": "Dev",
+      "type": "outcome",
+      "createdAt": "2024-07-26T00:11:55.907Z",
+      "id": 5
     }
   ]
 }
